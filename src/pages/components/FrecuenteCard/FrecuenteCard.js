@@ -5,15 +5,15 @@ import "./FrecuenteCard.scss"
 const FrecuenteCard = ({ frecuente }) => {
 
     const [open, setOpen] = useState(false)
-    const { question, answer } = frecuente
+    //const { question, answer } = frecuente
 
 
     return (
         <>
             <div className="frecuente_card" onClick={() => setOpen(!open)}>
-                <h3 className="frecuente_card_title" > {question ? question : frecuente.question}</h3>
+                <h3 className="frecuente_card_title" > {frecuente.question}</h3>
                 {open
-                    ? <h3 className="frecuente_response">{answer}</h3>
+                    ? <h3 className="frecuente_response">{frecuente.answer}</h3>
                     : null}
             </div>
         </>
