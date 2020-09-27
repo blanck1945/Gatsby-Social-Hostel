@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "gatsby"
 
-import "./styles/navegation.scss"
+import "./styles/Navegation.scss"
 
 const Navegation = () => {
     return (

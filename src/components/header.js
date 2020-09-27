@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import "./styles/Header.scss"
 
 
-const header = ({ title }) => {
+const Header = ({ title }) => {
     return (
         <header>
             <div className="nav">
@@ -17,4 +17,4 @@ const header = ({ title }) => {
     )
 }
 
-export default header
+export default Header
