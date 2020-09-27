@@ -2,7 +2,7 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import BackgroundImage from "gatsby-background-image"
 
-import "./styles/Image.scss"
+import "./styles/BackImage.scss"
 const BackImage = () => {
 
   const { image } = useStaticQuery(graphql`

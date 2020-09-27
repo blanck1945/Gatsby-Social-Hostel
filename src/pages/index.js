@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react"
 import Layout from "../components/layout"
-import Image from "../components/Image"
+import BackImage from "../components/BackImage"
 import Content from "../components/InicioContent/Cotent"
 import useHabitacion from "../hooks/useHabitacion"
 import Header from "../components/header"
@@ -20,7 +20,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <Image />
+      <BackImage />
       <Header title="Descubre nuestro hostel" />
       <Content />
       <Header title="Nuestras Habitaciones" />
