@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import BackgroundImage from "gatsby-background-image"
 
 import "./styles/Image.scss"
-const Image = () => {
+const BackImage = () => {
 
   const { image } = useStaticQuery(graphql`
     query {
@@ -29,4 +29,4 @@ const Image = () => {
 
 }
 
-export default Image
+export default BackImage

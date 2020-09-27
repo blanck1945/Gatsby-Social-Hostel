@@ -47,8 +47,4 @@ const Content = () => {
 
 export default Content
 
-/* <div className="content_center">
-        <div className="content_text">
 
-        </div>
-      </div>*/
