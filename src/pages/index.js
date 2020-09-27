@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react"
-import Layout from "./components/layout"
+import Layout from "./components/Layout"
 import BackImage from "./components/BackImage"
 import Content from "./components/InicioContent/Cotent"
 import useHabitacion from "../hooks/useHabitacion"

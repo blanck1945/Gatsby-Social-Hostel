@@ -3,7 +3,8 @@ import Header from "./Header"
 import Helmet from "react-helmet"
 import Footer from "./Footer"
 import * as Global from "../context/GlobalContext"
-import '../scss/main.scss'
+
+import '../../scss/main.scss'
 
 const Layout = (props) => {
 
