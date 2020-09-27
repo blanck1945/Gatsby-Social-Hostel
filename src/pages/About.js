@@ -51,7 +51,7 @@ const About = () => {
 
   useEffect(() => {
     dispatch({ type: "TOOGLE_PAGE_TITLE", payload: titulo })
-  }, [dispatch])
+  }, [dispatch, titulo])
 
   return (
     <Layout>

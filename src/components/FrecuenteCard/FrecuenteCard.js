@@ -7,7 +7,23 @@ const FrecuenteCard = ({ frecuente }) => {
     const [open, setOpen] = useState(false)
     const { question, answer } = frecuente
 
-    const questionsArr = [
+
+    return (
+        <>
+            <div className="frecuente_card" onClick={() => setOpen(!open)}>
+                <h3 className="frecuente_card_title" > {question}</h3>
+                {open
+                    ? <h3 className="frecuente_response">{answer}</h3>
+                    : null}
+            </div>
+        </>
+    )
+}
+export default FrecuenteCard
+
+
+/*
+  const questionsArr = [
         {
             question: "¿Cuando se puede hacer el check-in y el check-out en Social Hostel trindade?",
             answer: [
@@ -32,18 +48,4 @@ const FrecuenteCard = ({ frecuente }) => {
                 "3.Light"
             ]
         }
-    ]
-
-    return (
-        <>
-            <div className="frecuente_card" onClick={() => setOpen(!open)}>
-                <h3 className="frecuente_card_title" > {question}</h3>
-                {open
-                    ? <h3 className="frecuente_response">{answer}</h3>
-                    : null}
-            </div>
-        </>
-    )
-}
-export default FrecuenteCard
-
+    ]*/
