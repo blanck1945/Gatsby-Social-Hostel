@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react'
 import { graphql } from "gatsby"
-import Layout from "../layout"
+import Layout from "../Layout"
 import Image from "gatsby-image"
 import * as Global from "../../../context/GlobalContext"
 
