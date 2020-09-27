@@ -1,8 +1,8 @@
 import React, { useContext, useEffect } from 'react'
-import Layout from "../components/Layout"
-import BookContent from "../components/BookContent/BookContent"
-import Header from "../components/Header"
-import AboutContent from "../components/AboutContent/AboutContent"
+import Layout from "./components/Layout"
+import BookContent from "./components/BookContent/BookContent"
+import Header from "./components/Header"
+import AboutContent from "./components/AboutContent/AboutContent"
 import * as Global from "../context/GlobalContext"
 import { useStaticQuery, graphql } from "gatsby"
 

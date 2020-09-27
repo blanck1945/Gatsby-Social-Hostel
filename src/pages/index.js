@@ -1,13 +1,13 @@
 import React, { useContext, useEffect } from "react"
-import Layout from "../components/layout"
-import BackImage from "../components/BackImage"
-import Content from "../components/InicioContent/Cotent"
+import Layout from "./components/layout"
+import BackImage from "./components/BackImage"
+import Content from "./components/InicioContent/Cotent"
 import useHabitacion from "../hooks/useHabitacion"
-import Header from "../components/header"
-import RoomContent from "../components/InicioContent/RoomContent"
-import CommentContent from "../components/InicioContent/CommentContent"
+import Header from "./components/header"
+import RoomContent from "./components/InicioContent/RoomContent"
+import CommentContent from "./components/InicioContent/CommentContent"
 import * as Global from "../context/GlobalContext"
-import BookContent from "../components/BookContent/BookContent"
+import BookContent from "./components/BookContent/BookContent"
 
 const IndexPage = () => {
 

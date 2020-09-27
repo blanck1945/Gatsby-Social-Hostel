@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from 'react'
-import Layout from "../components/layout"
+import Layout from "./components/layout"
 import useFrecuente from "../hooks/useFrecuente"
-import FrecuenteCard from '../components/FrecuenteCard/FrecuenteCard'
-import Header from "../components/header"
-import BookContent from '../components/BookContent/BookContent'
+import FrecuenteCard from './components/FrecuenteCard/FrecuenteCard'
+import Header from "./components/header"
+import BookContent from './components/BookContent/BookContent'
 import * as Global from "../context/GlobalContext"
 
 
