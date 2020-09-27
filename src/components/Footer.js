@@ -1,7 +1,7 @@
 import React from 'react'
 import SocialBox from "./FooterComp/SocialBox"
 
-import "./styles/Footer.scss"
+import "./styles/FooterStyle.scss"
 
 const Footer = () => {
 

@@ -1,8 +1,8 @@
 import React from 'react'
-import Navegation from "./Navegation"
+import Navegation from "./Navegation.js"
 import { Link } from "gatsby"
 
-import "./styles/Header.scss"
+import "./styles/HeaderStyle.scss"
 
 
 const Header = ({ title }) => {
