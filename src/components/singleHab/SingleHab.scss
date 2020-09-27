@@ -1,0 +1,24 @@
+@import "../../scss/variables";
+.single_div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .single_text {
+    font-size: 2.8rem;
+    margin: 8px 0;
+    color: mix($green, $yellow);
+  }
+  .single_pa {
+    width: 70%;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .single_img {
+    width: 70%;
+    margin: auto;
+    margin-top: 35px;
+    height: 750px;
+  }
+}

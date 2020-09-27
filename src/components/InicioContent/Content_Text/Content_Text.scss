@@ -1,0 +1,12 @@
+@import "../../../scss/variables";
+.text_con {
+  margin: 14px 0;
+  .text_head {
+    color: mix($green, $yellow);
+    margin-bottom: 3px;
+  }
+  .content_box {
+    display: flex;
+    flex-direction: column;
+  }
+}

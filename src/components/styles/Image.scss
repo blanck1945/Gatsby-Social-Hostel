@@ -1,0 +1,46 @@
+@import "../../scss/variables";
+
+.image {
+  height: 400px;
+  margin: auto;
+  .image_con {
+    background-color: rgba(51, 51, 51, 0.445);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .image_head {
+      margin-top: 130px;
+      color: mix($green, $yellow);
+    }
+    .image_p {
+      color: $white;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .image {
+    min-height: 720px;
+    margin: auto;
+    @media (min-width: 768px) {
+      .image_head {
+        font-size: 2.5rem;
+        color: mix($green, $yellow);
+      }
+      .image_p {
+        font-size: 1.5rem;
+        color: $white;
+      }
+    }
+    @media (min-width: 990px) {
+      .image_head {
+        font-size: 3.5rem;
+        color: mix($green, $yellow);
+      }
+      .image_p {
+        font-size: 2.2rem;
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import "../../../scss/variables";
+
+.book_comp {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  .book_pa {
+    color: $blue;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  .book_img_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .book_link {
+      width: 70%;
+      .book_img {
+        width: 85%;
+        margin: 0 5px;
+        cursor: pointer;
+        height: 160px;
+      }
+    }
+  }
+}
+
+@media (min-width: 805px) {
+  .book_comp {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    min-height: 300px;
+    .book_pa {
+      color: $blue;
+      text-align: center;
+      font-weight: 700;
+      font-size: 2rem;
+      height: 80px;
+      margin-bottom: 15px;
+    }
+    .book_img_div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      .book_link {
+        height: 130px;
+        width: 30%;
+        margin: 0 20px;
+        cursor: pointer;
+        .book_img {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

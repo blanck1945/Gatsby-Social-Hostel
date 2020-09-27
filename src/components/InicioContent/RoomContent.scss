@@ -1,0 +1,25 @@
+@import "../../scss/variables";
+.room_box {
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+  align-items: center;
+  padding: 15px 14px;
+}
+
+@media (min-width: 1000px) {
+  .room_box {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 55.5% 55.5%;
+  }
+}
+
+@media (min-width: 1310px) {
+  .room_box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    padding: 25px 15px;
+  }
+}

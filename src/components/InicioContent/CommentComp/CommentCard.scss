@@ -1,0 +1,138 @@
+@import "../../../scss/variables";
+
+.comment_card {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
+  min-height: 100px;
+  margin: 8px 10px;
+  box-shadow: $shadowm;
+  background-color: white;
+  border-radius: 5px;
+  padding: 6px 0;
+  padding-left: 8px;
+  border: 1px solid $green;
+  .comment_up {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid mix($green, $yellow);
+    .card_name {
+      font-size: 1.5rem;
+      color: mix($green, $yellow);
+    }
+    .card_country {
+      color: mix($green, $yellow);
+      font-size: 1.5rem;
+      margin-left: 13px;
+    }
+    .card_score {
+      font-size: 1.5rem;
+      color: $blue;
+      margin-left: 13px;
+    }
+  }
+  .card_text {
+    color: $blue;
+    font-size: 1.2rem;
+    width: 95%;
+    font-weight: 700;
+    margin: 5px 0;
+  }
+  .comment_down {
+    display: flex;
+    background-color: $blue;
+    min-height: 25px;
+    padding: 4px 0;
+    margin: 4px 0;
+    width: 95%;
+    border-radius: 5px;
+    align-items: center;
+    color: white;
+    .puntaje_text {
+      margin-left: 5px;
+      font-size: 1.2rem;
+      min-width: 10%;
+      color: $yellow;
+    }
+    .card_score {
+      margin-left: 4px;
+      color: $green;
+    }
+    .puntaje_span {
+      color: $yellow;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .comment_card {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    box-shadow: $shadowm;
+    min-height: 100px;
+    margin: 12px auto;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid $green;
+    .comment_up {
+      display: flex;
+      align-items: center;
+      width: 95%;
+      padding-bottom: 5px;
+      border-bottom: 1px solid mix($green, $yellow);
+      .card_name {
+        font-size: 1.5rem;
+        color: mix($green, $yellow);
+      }
+      .card_country {
+        color: mix($green, $yellow);
+        font-size: 1.5rem;
+        margin-left: 13px;
+      }
+      .card_score {
+        font-size: 1.5rem;
+        color: white;
+        border-radius: 4px;
+        padding: 2px 6px;
+        background-color: $blue;
+        margin-left: 13px;
+      }
+    }
+    .card_text {
+      min-height: 55px;
+      font-weight: 700;
+    }
+    .comment_down {
+      display: flex;
+      background-color: $blue;
+      min-height: 25px;
+      padding: 4px 0;
+      margin: 4px 0;
+      width: 95%;
+      border-radius: 5px;
+      align-items: center;
+      color: white;
+      .puntaje_text {
+        margin-left: 5px;
+        font-size: 1.2rem;
+        min-width: 10%;
+        color: $yellow;
+      }
+      .card_score {
+        margin-left: 6px;
+        color: $green;
+      }
+      .puntaje_span {
+        margin-left: 2px;
+        color: $yellow;
+      }
+    }
+  }
+}
