@@ -17,7 +17,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     habitaciones.forEach(el => {
         actions.createPage({
             path: el.slug,
-            component: require.resolve('./src/components/singleHab/SingleHab.js'),
+            component: require.resolve('./src/pages/components/singleHab/SingleHab.js'),
             context: {
                 slug: el.slug
             }
