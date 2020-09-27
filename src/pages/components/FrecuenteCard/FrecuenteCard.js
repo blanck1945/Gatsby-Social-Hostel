@@ -11,7 +11,7 @@ const FrecuenteCard = ({ frecuente }) => {
     return (
         <>
             <div className="frecuente_card" onClick={() => setOpen(!open)}>
-                <h3 className="frecuente_card_title" > {question}</h3>
+                <h3 className="frecuente_card_title" > {question ? question : frecuente.question}</h3>
                 {open
                     ? <h3 className="frecuente_response">{answer}</h3>
                     : null}

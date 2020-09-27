@@ -10,7 +10,7 @@ const Header = ({ title }) => {
         <header>
             <div className="nav">
                 <Link to="/" className="nav_header linkHead">{title}</Link>
-                <script src="https://kit.fontawesome.com/493af9935f.js" crossorigin="anonymous"></script>
+                <script src="https://kit.fontawesome.com/493af9935f.js" crossOrigin="anonymous"></script>
                 <Navegation />
             </div>
         </header>
