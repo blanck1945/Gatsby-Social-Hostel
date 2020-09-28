@@ -61,14 +61,14 @@
           width: 100%;
           margin: 0 5px;
           cursor: pointer;
-          height: 140px;
+          height: 170px;
         }
       }
     }
   }
 }
 
-@media (min-width: 805px) {
+@media (min-width: 980px) {
   .book_comp {
     width: 80%;
     margin: auto;
@@ -92,13 +92,13 @@
       align-items: center;
       justify-content: center;
       .book_link {
-        height: 130px;
+        height: 150px;
         width: 30%;
         margin: 0 20px;
         cursor: pointer;
         .book_img {
           width: 100%;
-          height: 160px;
+          height: 200px;
         }
       }
     }

@@ -30,18 +30,6 @@ const FAQ = () => {
         }
     `)
 
-    //const frecuente = useFrecuente()
-    //console.log(data.allDatoCmsFrecuente.nodes)
-
-    const dataFre = [
-        {
-            id: 1,
-            pregunta: "¿Pregunta 1?",
-            respuesta: "la respuesta"
-        }
-    ]
-
-
     return (
         <Layout>
             <div className="frecuente_div">
@@ -54,12 +42,3 @@ const FAQ = () => {
 }
 
 export default FAQ
-
-/*
- const dataFre = [
-        {
-            id: 1,
-            pregunta: "¿Pregunta 1?",
-            respuesta: "la respuesta"
-        }
-    ]*/

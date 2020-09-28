@@ -8,10 +8,13 @@ import "./styles/SocialBox.scss"
 const SocialBox = () => {
     return (
         <div className="social_box">
-            <FaFacebook className="icon facebook"
-            />
+            <a href="https://www.facebook.com/socialhosteltr/">
+                <FaFacebook className="icon facebook" />
+            </a>
             <AiFillTwitterCircle className="icon twitter" />
-            <AiFillInstagram className="icon instagram" />
+            <a href="https://www.instagram.com/socialhosteltr/">
+                <AiFillInstagram className="icon instagram" />
+            </a>
         </div>
     )
 }
