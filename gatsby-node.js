@@ -10,10 +10,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     `)
 
     if (result.errors) {
-        reporter.panic('No hubo resultados', resultado.errors)
+        reporter.panic('No hubo resultados', result.errors)
     }
 
     const habitaciones = result.data.allDatoCmsHabitacion.nodes
+    console.log(habitaciones)
+
+
     habitaciones.forEach(el => {
         actions.createPage({
             path: el.slug,

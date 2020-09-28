@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react'
 import Layout from "./components/Layout"
-import useFrecuente from "../hooks/useFrecuente"
+//import useFrecuente from "../hooks/useFrecuente"
+import { graphql, useStaticQuery } from "gatsby"
 import FrecuenteCard from './components/FrecuenteCard/FrecuenteCard'
 import Header from "./components/Header"
 import BookContent from './components/BookContent/BookContent'
@@ -17,11 +18,33 @@ const FAQ = () => {
         dispatch({ type: "TOOGLE_PAGE_TITLE", payload: "Frequently Ask Questions" })
     }, [dispatch])
 
-    const frecuente = useFrecuente()
+    const data = useStaticQuery(graphql`
+    query {
+        allDatoCmsFrecuente{
+          nodes {
+            id,
+            pregunta,
+            respuesta
+          }
+        }
+        }
+    `)
+
+    //const frecuente = useFrecuente()
+    //console.log(data.allDatoCmsFrecuente.nodes)
+
+    const dataFre = [
+        {
+            id: 1,
+            pregunta: "¿Pregunta 1?",
+            respuesta: "la respuesta"
+        }
+    ]
+
     return (
         <Layout>
             <div className="frecuente_div">
-                {frecuente.map(el => <FrecuenteCard key={el.id} frecuente={el} />)}
+                {dataFre.map(el => <FrecuenteCard key={el.id} frecuente={el} />)}
             </div>
             <Header title="Reservas" />
             <BookContent />
@@ -30,3 +53,12 @@ const FAQ = () => {
 }
 
 export default FAQ
+
+/*
+ const dataFre = [
+        {
+            id: 1,
+            pregunta: "¿Pregunta 1?",
+            respuesta: "la respuesta"
+        }
+    ]*/

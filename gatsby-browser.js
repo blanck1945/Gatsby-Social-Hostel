@@ -1,10 +1,12 @@
-const React = require("react")
-const GlobalContext = require("./src/context/GlobalContext")
+import React from "react"
+import GlobalContext from "./src/context/GlobalContext"
 
-exports.wrapRootElement = ({ element }) => {
+export const wrapRootElement = ({ element }) => {
     return (
         <GlobalContext.GlobalContext>
             {element}
         </GlobalContext.GlobalContext>
     )
 }
+
+//exports.wrapRootElement = wrapElement

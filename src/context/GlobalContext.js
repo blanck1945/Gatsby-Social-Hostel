@@ -38,7 +38,7 @@ const GlobalContext = ({ children }) => {
     )
 }
 
-module.exports = {
+exports = {
     GlobalContext,
     GlobalContextState,
     GlobalDispatch
