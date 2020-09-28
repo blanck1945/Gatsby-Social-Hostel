@@ -13,6 +13,7 @@ const Layout = (props) => {
         <>
             <Helmet>
                 <title>Social Hostel Trindade</title>
+                <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
             </Helmet>
             <Header title={state.pageTitle} />
             {props.children}
