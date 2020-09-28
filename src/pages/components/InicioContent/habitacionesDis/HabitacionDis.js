@@ -6,15 +6,14 @@ import "./HabitacioneDis.scss"
 
 const HabitacionDis = ({ data }) => {
 
-    const { titulo, contenido, imagen, slug } = data
 
     return (
         <div className="habitacion_card">
-            <Image fluid={imagen.fluid} className="habitacion_image" />
+            <Image fluid={data !== undefined ? data.imagen.fluid : "../../../../images/main.jpg"} className="habitacion_image" />
             <div className="habitacion_box">
-                <h3 className="habitacion_text">{titulo}</h3>
-                <p className="habitacion_pa">{contenido}</p>
-                <Link to={slug} className="general_btn">
+                <h3 className="habitacion_text">{data !== undefined ? data.titulo : "Titulo"}</h3>
+                <p className="habitacion_pa">{data !== undefined ? data.contenido : "Contenido"}</p>
+                <Link to={data !== undefined ? data.slug : "/"} className="general_btn">
                     Entrar
                 </Link>
             </div>

@@ -5,14 +5,14 @@ import { graphql, useStaticQuery } from "gatsby"
 import FrecuenteCard from './components/FrecuenteCard/FrecuenteCard'
 import Header from "./components/Header"
 import BookContent from './components/BookContent/BookContent'
-import * as Global from "../context/GlobalContext"
+import { GlobalDispatch } from "../context/GlobalContext"
 
 
 import "./styles/FAQ.scss"
 
 const FAQ = () => {
 
-    const dispatch = useContext(Global.GlobalDispatch)
+    const dispatch = useContext(GlobalDispatch)
 
     useEffect(() => {
         dispatch({ type: "TOOGLE_PAGE_TITLE", payload: "Frequently Ask Questions" })
@@ -41,10 +41,11 @@ const FAQ = () => {
         }
     ]
 
+
     return (
         <Layout>
             <div className="frecuente_div">
-                {dataFre.map(el => <FrecuenteCard key={el.id} frecuente={el} />)}
+                {data.allDatoCmsFrecuente.nodes.map(el => <FrecuenteCard key={el.id} frecuente={el} />)}
             </div>
             <Header title="Reservas" />
             <BookContent />

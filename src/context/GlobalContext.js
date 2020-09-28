@@ -1,7 +1,7 @@
 const React = require('react')
 
-const GlobalContextState = React.createContext()
-const GlobalDispatch = React.createContext()
+export const GlobalContextState = React.createContext()
+export const GlobalDispatch = React.createContext()
 
 const initialState = {
     theme: 'Brazil',
@@ -25,7 +25,7 @@ const globalReducer = (state, action) => {
     }
 }
 
-const GlobalContext = ({ children }) => {
+export const GlobalContext = ({ children }) => {
 
     const [state, dispatch] = React.useReducer(globalReducer, initialState)
 
@@ -36,10 +36,4 @@ const GlobalContext = ({ children }) => {
             </GlobalDispatch.Provider>
         </GlobalContextState.Provider>
     )
-}
-
-exports = {
-    GlobalContext,
-    GlobalContextState,
-    GlobalDispatch
 }

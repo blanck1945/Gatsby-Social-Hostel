@@ -5,15 +5,14 @@ import "./FrecuenteCard.scss"
 const FrecuenteCard = ({ frecuente }) => {
 
     const [open, setOpen] = useState(false)
-    //const { pregunta, respuesta } = props.frecuente
 
 
     return (
         <>
             <div className="frecuente_card" onClick={() => setOpen(!open)}>
-                <h3 className="frecuente_card_title" > {frecuente.pregunta}</h3>
+                <h3 className="frecuente_card_title" > {frecuente !== undefined ? frecuente.pregunta : "Pregunta 1"}</h3>
                 {open
-                    ? <h3 className="frecuente_response">{frecuente.respuesta}</h3>
+                    ? <h3 className="frecuente_response">{frecuete !== undefined ? frecuente.respuesta : "Respuesta 1"}</h3>
                     : null}
             </div>
         </>

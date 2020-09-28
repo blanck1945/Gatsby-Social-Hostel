@@ -3,7 +3,7 @@ import Layout from "./components/Layout"
 import BookContent from "./components/BookContent/BookContent"
 import Header from "./components/Header"
 import AboutContent from "./components/AboutContent/AboutContent"
-import * as Global from "../context/GlobalContext"
+import { GlobalDispatch } from "../context/GlobalContext"
 import { useStaticQuery, graphql } from "gatsby"
 
 
@@ -46,7 +46,7 @@ const About = () => {
 
   const { titulo, contenido, imagen, imagen2 } = allDatoCmsPagina.nodes[0]
 
-  const dispatch = useContext(Global.GlobalDispatch)
+  const dispatch = useContext(GlobalDispatch)
 
 
   useEffect(() => {

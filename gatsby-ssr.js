@@ -1,10 +1,10 @@
 import React from "react"
-import GlobalContext from "./src/context/GlobalContext"
+import * as Global from "./src/context/GlobalContext"
 
 export const wrapRootElement = ({ element }) => {
     return (
-        <GlobalContext.GlobalContext >
+        <Global.GlobalContext >
             {element}
-        </GlobalContext.GlobalContext>
+        </Global.GlobalContext>
     )
 }

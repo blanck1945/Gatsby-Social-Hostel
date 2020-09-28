@@ -5,12 +5,12 @@ import Content from "./components/InicioContent/Cotent"
 import Header from "./components/Header"
 import RoomContent from "./components/InicioContent/RoomContent"
 import CommentContent from "./components/InicioContent/CommentContent"
-import * as Global from "../context/GlobalContext"
+import { GlobalDispatch } from "../context/GlobalContext"
 import BookContent from "./components/BookContent/BookContent"
 
 const IndexPage = () => {
 
-  const dispatch = useContext(Global.GlobalDispatch)
+  const dispatch = useContext(GlobalDispatch)
 
   useEffect(() => {
     dispatch({ type: "TOOGLE_PAGE_TITLE", payload: "Social Hostel Trindade" })
