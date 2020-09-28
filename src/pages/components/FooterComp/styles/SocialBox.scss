@@ -1,10 +1,11 @@
 @import "../../../../scss/variables.scss";
 .social_box {
-  width: 50%;
+  min-width: 250px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 90px;
+  margin: 8px 0;
+  min-height: 120px;
   .icon {
     cursor: pointer;
     color: $blue;
@@ -19,7 +20,7 @@
     color: #4267b2;
     border: none;
     border-radius: 50%;
-
+    margin: 0 4px;
     transition: 0.2s ease-in-out;
   }
   .twitter:hover {
@@ -27,13 +28,59 @@
     border: none;
     color: #1da1f2;
     border-radius: 50%;
+    margin: 0 4px;
     transition: 0.2s ease-in-out;
   }
   .instagram:hover {
     background-color: white;
     border-radius: 50%;
+    margin: 0 4px;
     color: mix(#8a3ab9, #e95950);
     transition: 0.2s ease-in-out;
     border: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .social_box {
+    min-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 8px 0;
+    min-height: 120px;
+    .icon {
+      cursor: pointer;
+      color: $blue;
+      border: 1px solid $green;
+      background-color: mix($green, $yellow, 15);
+      padding: 4px;
+      font-size: 4.2rem;
+      transition: 0.2s ease-in-out;
+    }
+    .facebook:hover {
+      background-color: white;
+      color: #4267b2;
+      border: none;
+      border-radius: 50%;
+      margin: 0 4px;
+      transition: 0.2s ease-in-out;
+    }
+    .twitter:hover {
+      background-color: white;
+      border: none;
+      color: #1da1f2;
+      border-radius: 50%;
+      margin: 0 4px;
+      transition: 0.2s ease-in-out;
+    }
+    .instagram:hover {
+      background-color: white;
+      border-radius: 50%;
+      margin: 0 4px;
+      color: mix(#8a3ab9, #e95950);
+      transition: 0.2s ease-in-out;
+      border: none;
+    }
   }
 }

@@ -18,11 +18,16 @@
     }
   }
 }
-@media (min-width: 768px) {
-  .image {
-    min-height: 720px;
-    margin: auto;
-    @media (min-width: 768px) {
+
+@media (min-width: 330px) {
+  .image_head {
+    font-size: 1.2rem;
+    color: mix($green, $yellow);
+  }
+  @media (min-width: 768px) {
+    .image {
+      min-height: 720px;
+      margin: auto;
       .image_head {
         font-size: 2.5rem;
         color: mix($green, $yellow);
