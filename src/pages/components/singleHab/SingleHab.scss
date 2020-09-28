@@ -1,24 +1,61 @@
 @import "../../../scss/variables.scss";
+
 .single_div {
-  width: 80%;
+  width: 90%;
   margin: auto;
   display: flex;
   flex-direction: column;
+  padding-bottom: 35px;
   align-items: center;
   .single_text {
-    font-size: 2.8rem;
+    font-size: 2rem;
     margin: 8px 0;
     color: mix($green, $yellow);
   }
   .single_pa {
-    width: 70%;
+    width: 95%;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+    color: $blue;
+    font-weight: 700;
   }
   .single_img {
-    width: 70%;
+    width: 95%;
+    border: 3px solid mix($yellow, $green);
+    border-radius: 5px;
     margin: auto;
     margin-top: 35px;
-    height: 750px;
+    height: 550px;
+  }
+}
+
+@media (min-width: 950px) {
+  .single_div {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 35px;
+    align-items: center;
+    .single_text {
+      font-size: 2.8rem;
+      margin: 8px 0;
+      color: mix($green, $yellow);
+    }
+    .single_pa {
+      width: 70%;
+      text-align: center;
+      font-size: 1.6rem;
+      color: $blue;
+      font-weight: 700;
+    }
+    .single_img {
+      width: 70%;
+      border: 3px solid mix($yellow, $green);
+      border-radius: 5px;
+      margin: auto;
+      margin-top: 35px;
+      height: 750px;
+    }
   }
 }
