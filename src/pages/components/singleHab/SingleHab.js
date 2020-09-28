@@ -2,6 +2,8 @@ import React, { useContext, useEffect } from 'react'
 import { graphql } from "gatsby"
 import Layout from "../Layout"
 import Image from "gatsby-image"
+import Header from "../Header"
+import BookContent from "../BookContent/BookContent"
 import * as Global from "../../../context/GlobalContext"
 
 import "./SingleHab.scss"
@@ -38,6 +40,8 @@ const SingleHab = ({ data }) => {
         <p className="single_pa">{contenido}</p>
         <Image fluid={imagen.fluid} className="single_img" />
       </div>
+      <Header title="Reservas" />
+      <BookContent />
     </Layout>
   )
 }
