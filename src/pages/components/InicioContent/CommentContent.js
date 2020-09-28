@@ -1,5 +1,5 @@
 import React from 'react'
-import useComentario from "../../../hooks/useComentario"
+import useComentario from "../../hooks/useComentario"
 import CommentCard from "./CommentComp/CommentCard"
 
 import "./CommentContent.scss"
