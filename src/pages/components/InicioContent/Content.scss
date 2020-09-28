@@ -72,6 +72,9 @@
         justify-content: center;
         min-height: 550px;
         padding-left: 13px;
+        .text_pa_in {
+          @extend.text_pa;
+        }
       }
       .text_head {
         width: 85%;
