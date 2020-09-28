@@ -2,7 +2,6 @@ import React, { useContext, useEffect } from "react"
 import Layout from "./components/Layout"
 import BackImage from "./components/BackImage"
 import Content from "./components/InicioContent/Cotent"
-import useHabitacion from "./hooks/useHabitacion"
 import Header from "./components/Header"
 import RoomContent from "./components/InicioContent/RoomContent"
 import CommentContent from "./components/InicioContent/CommentContent"
@@ -11,7 +10,6 @@ import BookContent from "./components/BookContent/BookContent"
 
 const IndexPage = () => {
 
-  const habitaciones = useHabitacion()
   const dispatch = useContext(Global.GlobalDispatch)
 
   useEffect(() => {
@@ -24,7 +22,7 @@ const IndexPage = () => {
       <Header title="Descubre nuestro hostel" />
       <Content />
       <Header title="Nuestras Habitaciones" />
-      <RoomContent data={habitaciones} />
+      <RoomContent />
       <Header title="Se Dice..." />
       <CommentContent />
       <Header title="Reservas" />
